@@ -1,0 +1,152 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-color: #fff;
+  height:100%;
+}
+img {
+  margin:0;
+  padding:0;
+}
+.wrap {
+  position: absolute;
+
+}
+.banner {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    height: 17.64vw;
+    background-image:url('images/banner.png');
+    background-size:105%;
+    background-position: center;
+    top: 0;
+    left:0;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow-y: hidden;
+}
+.banner-logo {
+  position: relative;
+  display: inline-block;
+  height: 17.58vw;
+  transition: all .3s;
+  z-index: +1;
+}
+.banner-mask {
+  position: absolute;
+  width:100%;
+  top:0;
+  left:0;
+  height: 100%;
+  display: inline-block;
+  background-color:black;
+  opacity: 0;
+  z-index: 0;
+  transition: all .3s;
+}
+.banner-link:hover ~ .banner-mask {
+  opacity: 0.3;
+}
+.banner-link:hover .banner-logo{
+  transform: scale(1.05);
+}
+.subtitle {
+  position: relative;
+  margin-top:0;
+  margin-bottom:0;
+  text-align: center;
+  font-family: 'nanum Myeongjo';
+  line-height: 40px;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #10181c;
+  padding-top: 1vw;
+  letter-spacing: 11px;
+}
+.main {
+  display: inline-block;
+  width:70%;
+  margin-left:15%;
+  height: 150px;
+}
+.photo-wrap {
+  display: inline-block;
+  width:35%;
+  position: relative;
+}
+.photo-wrap img {
+  position: relative;
+  display: inline-block;
+  width:100%;
+}
+.text-wrap {
+  position: relative;
+  display: inline-block;
+  width: 65%;
+}
+.text-wrap p {
+  position: relative;
+  font-size: 1.5vw;
+  width:90%;
+  text-align: justify;
+  margin-left: 5%;
+  font-family: 'Nanum Myeongjo';
+  color: #10181c;
+  line-height: 2vw;
+}
+.text-wrap p span {
+  background-color:#f8ecfe;
+  position: relative;
+  padding-left: 5px;
+}
+.text-wrap, .photo-wrap {
+  margin-left: -4px;
+  left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.about-wrap {
+  position: relative;
+  display: inline-block;
+  margin-top: 13vh;
+}
+.social-footer {
+  position: fixed;
+  width: 70%;
+  height: 7vw;
+  bottom:0;
+  left:15%;
+  display: inline-block;
+  text-align: center;
+  overflow-y: hidden;
+}
+.soc-btn span {
+  position: relative;
+  top:0.1vw;
+}
+.itunes span {
+  left: -0.1vw;
+}
+.soc-btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  width: 2vw;
+  line-height:2vw;
+  float:left;
+  color:#10181c;
+  font-size: 20px;
+  top: 2.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 50%;
+  left: calc(50% - 16vw / 2);
+  background-color:transparent;
+  transition: all .15s;
+}
+.soc-btn:hover {
+  color: white;
+  background-color:#10181c;
+}
