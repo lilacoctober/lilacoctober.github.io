@@ -76,6 +76,38 @@ img {
   width:35%;
   position: relative;
 }
+.photo-wrap::after {
+  content: '';
+  position: absolute;
+  width:100%;
+  height: calc(100% - 3px);
+  top:0;
+  left:0;
+  background-color:black;
+  opacity: 0;
+  transition: all .3s;
+}
+.photo-wrap:hover::after {
+  opacity: 0.1;
+}
+.photo-text {
+  position: absolute;
+  width:100%;
+  color:white;
+  font-family: 'nanum Myeongjo';
+  bottom: 0.45vw;
+  letter-spacing: 2px;
+  text-align: center;
+  left:0;
+  z-index: +2;
+  font-size: 0.8vw;
+  transition: .3s;
+  opacity: 0;
+  transition: .3s;
+}
+.photo-wrap:hover .photo-text {
+  opacity: 1;
+}
 .photo-wrap img {
   position: relative;
   display: inline-block;
