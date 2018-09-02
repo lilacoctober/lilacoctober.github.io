@@ -230,6 +230,9 @@ img {
     .soc-btn:hover {
       background-color: transparent;
       color: #b24df0;
-
+    }
+    .photo-text {
+      font-size: 2.5vw;
+      bottom: 2vw;
     }
 }
