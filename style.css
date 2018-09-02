@@ -169,7 +169,7 @@ img {
   line-height:2vw;
   float:left;
   color:#10181c;
-  font-size: 20px;
+  font-size: 1vw;
   top: 1.5vw;
   margin-left: 1vw;
   margin-right: 1vw;
@@ -181,4 +181,55 @@ img {
 .soc-btn:hover {
   color: white;
   background-color:#10181c;
+}
+@media only screen and (max-width: 1025px) {
+    .banner {
+      height: 25vh;
+      background-size: cover;
+    }
+    .banner-logo {
+      height:100%;
+    }
+    .subtitle {
+      font-size: 5vw;
+      letter-spacing: 1vw;
+      padding-top: 0.2vh;
+      line-height: 5vh;
+    }
+    .photo-wrap {
+      width:100%;
+    }
+    .main {
+      width:80%;
+      margin-left:10%;
+    }
+    .about-wrap {
+      margin-top: 4vh;
+    }
+    .text-wrap {
+      width:100%;
+    }
+    .text-wrap p {
+      font-size: 5vw;
+      line-height: 7vw;
+      width:100%;
+      margin-left: 0;
+    }
+    .social-footer {
+      position: relative;
+      top:35vh;
+      height: 15vw;
+      margin-bottom: 25px;
+    }
+    .soc-btn {
+      width:8vw;
+      height: 8vw;
+      left: calc(50% - 22vw);
+      font-size: 5vw;
+    }
+    .soc-btn:hover {
+      background-color: transparent;
+      color: #b24df0;
+
+    }
 }
