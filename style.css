@@ -5,6 +5,14 @@ body {
   background-color: #fff;
   height:100%;
 }
+::selection {
+  background-color:#b067e3;
+  color:white;
+}
+::-moz-selection {
+  background-color:#b067e3;
+  color:white;
+}
 img {
   margin:0;
   padding:0;
